@@ -32,6 +32,7 @@ print(eat_junk(food))
 
 #Assertions can be overriden with optimized code: if the python code is run with -O tag, it will ignore all assertions
 """Example: Never write code like this, becuase when ran with -O tag, anybody will have capability to run this.
+def do_something_bad(user):
     assert user.is_admin, "Only admins can remove bad stuff"
     destroy_a_bunch_of_stuff()
     return "MUHAHAHAHA"
