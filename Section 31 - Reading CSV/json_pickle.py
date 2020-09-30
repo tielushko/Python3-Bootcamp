@@ -1,4 +1,4 @@
-import jsonpickle
+#import json_pickle
 
 class Cat:
 	def __init__(self, name, breed):
@@ -8,9 +8,9 @@ class Cat:
 c = Cat("Charles", "Tabby")
 
 # To JSONPICKLE 'c' the cat:
-with open("cat.json", "w") as file:
-	frozen = jsonpickle.encode(c)
-	file.write(frozen)
+# with open("cat.json", "w") as file:
+# 	frozen = jsonpickle.encode(c)
+# 	file.write(frozen)
 
 # To bring back 'c' the cat using JSONPICKLE
 # with open("cat.json", "r") as file:
