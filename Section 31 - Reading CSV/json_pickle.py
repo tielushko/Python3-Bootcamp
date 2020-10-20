@@ -1,4 +1,4 @@
-#import json_pickle
+import json_pickle
 
 class Cat:
 	def __init__(self, name, breed):

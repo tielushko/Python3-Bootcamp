@@ -56,8 +56,13 @@ print()
 print(soup.select("div"))
 print()
 
-# by attribute
+# by attribute 
 print(soup.select("[data-example]"))
 print()
 
-
+#get_text to get the text wihtin the element
+for el in soup.select(".special"):
+  print(el.name) #name of the tag with class special.
+  print(el.attrs) #returns attributes of a tag.
+  print(el.get_text()) #will return empty string if there is nothing under the tag.
+  
