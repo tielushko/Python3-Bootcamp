@@ -157,5 +157,5 @@ while start_game == 'y':
                 print("\nOh no! YOU HAVE LOSTTTTT GAME OVERRRRRR\n")
                 print("The correct author was:\n\n " + figlet_format(name))
                 print("\nBetter luck next time!!!")
-                start_game = input("\nWould you like to play another round? ")
+                start_game = input("\nWould you like to play another round? (y/n) ")
                 break
