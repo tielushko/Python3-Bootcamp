@@ -22,3 +22,9 @@ def parse_date(input_str):
     if match:
         return {'d': match.group('day'), 'm': match.group('month'), 'y': match.group('year')}
     return None
+
+# substituting any profane words that start with frack in it and are case insensitive
+
+def censor(input_str):
+    regex = re.compile(r'\bfrack\w\b*', re.IGNORECASE)
+    return regex.sub("CENSORED", input_str)
