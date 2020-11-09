@@ -3,6 +3,7 @@ import sqlite3
 connector = sqlite3.connect("my_friends.db")
 
 cursor = connector.cursor()
+cursor.execute("CREATE TABLE friends (first_name TEXT, last_name TEXT, closeness INTEGER);")
 
 people = [
     ("Roald", "Amundsen", 5),
